@@ -1,15 +1,17 @@
 # Hotel Booking Records Suvroneel Nathak
  
-📊 A comprehensive EDA and visualization project analyzing hotel booking patterns, cancellations, revenue trends, and customer behavior using Python,Matplotlib etc
+📊 A comprehensive EDA and visualization project analyzing hotel booking patterns, cancellations, revenue trends , customer behavior , room type preference  using Python,Matplotlib etc — no complex math required.
 
-Key Features:
-✅ Cancellation Analysis: Visualized cancellation rates and lead time impacts
-✅ Revenue Trends: Tracked monthly/yearly revenue and seasonality effects
-✅ Booking Patterns: Analyzed lead time distributions and price sensitivity
-✅ Comparative Insights: City Hotels vs. Resort Hotels performance
 
 Tech Stack:
 🐍 Python | 📊 Pandas | 🎨 Matplotlib/Seaborn | 🔍 Jupyter Notebook
+
+**Key Analytics**:  
+✅ **Cancellation Rates**: Simple percentage breakdowns (37% canceled)  
+✅ **Revenue Trends**: Monthly patterns via line charts  
+✅ **Booking Windows**: Lead time distributions (e.g., "70% book <30 days ahead")  
+✅ **Geographical Data**: Top booking countries (Portugal, UK, France)  
+✅ **Room Type Demand**: Visual ranking & market share (Type A = 42% bookings)  
 
 Business Value:
 🔹 Identified optimal pricing windows
