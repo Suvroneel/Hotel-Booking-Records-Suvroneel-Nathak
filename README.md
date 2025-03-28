@@ -21,3 +21,10 @@ Business Value:
 (Dataset: Contains 119,390 bookings with 32 features including dates, prices, and customer details)
 
 📌 Key Findings : Found 37% cancellation rate with 90% of cancellations from bookings made >60 days in advance
+
+📌 Key Findings :   Room Type A is most popular with 32,000 bookings—twice as many as Type B.  
+
+📌 Key Findings :    Types F and G have <5,000 bookings each, suggesting low demand.
+ 
+📌 Key Findings :   Consider promoting underbooked rooms (F/G) with discounts or bundles.
+
