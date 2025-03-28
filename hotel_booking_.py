@@ -250,13 +250,36 @@ print(df['lead_time'].describe(percentiles=[.25, .5, .75, .9, .95]))
 """##Room Type Preference"""
 
 # Analyze room type popularityand save to csv
-room_preference = (
-    df['reserved_room_type'].value_counts()
-    .reset_index()
-    .rename(columns={'index': 'room_type', 'reserved_room_type': 'booking_count'})
-)
-room_preference.to_csv('room_type_preference.csv', index=False)
+room_counts = df['reserved_room_type'].value_counts().reset_index()
+room_counts.columns = ['room_type', 'bookings']
+
+# Save to CSV (optional)
+room_counts.to_csv('room_type_preference.csv', index=False)
+
+import matplotlib.pyplot as plt
 
 # Load precomputed data
-room_data = pd.read_csv('room_type_preference.csv')
-room_data.info()
+data = pd.read_csv('room_type_preference.csv')  # Or use `room_counts` from above
+
+# Create figure
+plt.figure(figsize=(10, 5))
+
+# Bar chart
+plt.bar(data['room_type'], data['bookings'], color='skyblue', edgecolor='black')
+
+# Add labels/title
+plt.title('Most Popular Room Types', fontsize=14)
+plt.xlabel('Room Type', fontsize=12)
+plt.ylabel('Number of Bookings', fontsize=12)
+
+# Add value labels on bars
+for i, count in enumerate(data['bookings']):
+    plt.text(i, count + 100, str(count), ha='center')  # +100 offsets the label above the bar
+
+# Rotate x-labels if needed
+plt.xticks(rotation=45)
+
+# Save and show
+plt.tight_layout()
+plt.savefig('room_type_preference.png')
+plt.show()
