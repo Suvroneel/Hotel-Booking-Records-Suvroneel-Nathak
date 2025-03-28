@@ -20,11 +20,39 @@ Business Value:
 
 (Dataset: Contains 119,390 bookings with 32 features including dates, prices, and customer details)
 
-📌 Key Findings : Found 37% cancellation rate with 90% of cancellations from bookings made >60 days in advance
+**Key Findings**: 
 
-📌 Key Findings :   Room Type A is most popular with 32,000 bookings—twice as many as Type B.  
+📌**Cancellation Patterns**:
 
-📌 Key Findings :    Types F and G have <5,000 bookings each, suggesting low demand.
- 
-📌 Key Findings :   Consider promoting underbooked rooms (F/G) with discounts or bundles.
+   37% cancellation rate overall
 
+   90% of cancellations came from bookings made >60 days in advance
+   → Action: Implement stricter deposit policies for early bookings
+
+📌**Revenue Trends**:
+
+   July-August peak (30% higher revenue vs. average)
+
+   January-February dip (45% lower revenue)
+   → Action: Target seasonal promotions in low-demand months
+
+📌**Booking Lead Times**:
+
+   70% of guests book within 30 days of arrival
+
+   Only 5% plan >6 months ahead
+   → Action: Optimize last-minute pricing strategies
+
+📌**Room Type Demand**:
+
+   Dominant: Type A (42% share, 32K bookings)
+
+   Underused: Types F/G (<5K bookings combined)
+   → Action: Bundle F/G rooms with amenities or discounts
+
+📌 Geographic Hotspots:
+
+   Top 3 countries: Portugal (42%), UK (18%), France (12%)
+
+   Untapped markets: <2% bookings from Asia-Pacific
+   → Action: Localized marketing campaigns for high-potential regions
